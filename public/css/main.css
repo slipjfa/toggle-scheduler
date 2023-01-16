@@ -1,0 +1,270 @@
+body {
+  background: url(/img/escher.png) repeat, #332;
+  color: white;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+}
+
+.container { 
+  margin: 0 auto;
+  max-width: 480px; 
+}
+
+.outlet {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+}
+
+h2 {
+
+  text-align: center;
+}
+
+p.closedTeaser {
+  font-size: 100px;
+  text-align: center;
+}
+
+p.bohTimeStamps {
+  word-spacing: 55px;
+}
+
+a:link {
+  color: seagreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: seagreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: firebrick;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.form-name {
+  position: relative;
+}
+
+ /* The switch - the box around the slider */
+.switch {
+  margin-right: 16px;
+  margin-bottom: 32px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #700e07;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: palegoldenrod;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: seagreen;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 
+
+.wrapper, .login-wrapper, .add {
+  border: 3px outset darkolivegreen;
+  border-radius: 15px;
+  max-width: 480px;
+}
+
+.add {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Tab Container */
+.Tabs {
+  margin-top: -17px;
+  max-width: auto;
+  height: auto;
+  min-height: 400px;
+  color: #e8f0f2;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Tab Navigation */
+ul.nav {
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px outset darkolivegreen;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+}
+
+ul.nav li {
+  margin-left: -40px;
+  width: 20%;
+  padding: 0.2rem;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.7s;
+  background: rgba(140, 224, 196, 0.15);
+}
+
+ul.nav li:first-child {
+
+  border-top-left-radius: 10px;
+}
+ul.nav li:last-child(5) {
+  border-radius: 0;
+  border-top-right-radius: 10px;
+}
+
+ul.nav li:hover {
+  background: rgba(50, 224, 196, 0.15);
+}
+
+ul.nav li.active {
+  background: darkolivegreen;
+}
+
+.namePanel {
+  column-count: 2;
+}
+.navBar {
+  column-count: 2;
+  height: 36px;
+}
+
+.name-panel {
+  font-size: 16px;
+  border: 3px outset darkgoldenrod;
+  border-radius: 4px;
+  height: 2rem;
+  background: transparent;
+  color: greenyellow;
+  text-align: center;
+}
+
+.nameUpdateButton {
+  max-width: 2rem;
+}
+
+input[type=submit] {
+  background-color: seagreen;
+  text-align: center;
+  width: 2rem;
+  margin-top: 4px;
+  font-size: 20px;
+  border: 3px outset darkgoldenrod;
+  cursor: pointer;
+  color: darkred;
+}
+
+input[type=submit]:hover {
+  background-color: orange;
+  border-color: darkgoldenrod;
+  color: white;
+}
+
+.imgsDiv {
+  width: 100%;
+  column-count: 4;
+}
+
+.loading-spinner {
+  height: 20px;
+  width: fit-content;
+ margin: auto;
+}
+
+.input-name, .login-mail, .login-passwd {
+  font-size: 16px;
+  padding: 5px 10px;
+  display: block;
+  border: 3px outset darkgoldenrod;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: transparent;
+  color: greenyellow;
+  text-align: center;
+  width: 100%;
+}
+
+.input-name:focus {
+  border-color: gold;
+}
+
+button {
+  background-color: darkgoldenrod;
+  text-align: center;
+  margin-bottom: 2rem;
+  width: 100%;
+  font-size: 16px;
+  border-color: palegoldenrod;
+  cursor: pointer;
+  color: darkred;
+}
+
+button:hover {
+  background-color: orange;
+  border-color: darkgoldenrod;
+  color: white;
+}
